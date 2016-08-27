@@ -14,6 +14,7 @@ public class PhantomJS {
         WebDriver driver = new PhantomJSDriver();
         driver.get("http://google.com");
         System.out.println("Page title = " + driver.getTitle());
+        driver.close();
         driver.quit();
 
     }
